@@ -23,7 +23,7 @@ for chr in path:
     if(chr == '/'):
         dottedpath += '.'
     else:
-        dottedpath += chr 
+        dottedpath += chr
 dottedpath += '.'
 
 #import the method
