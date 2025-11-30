@@ -15,9 +15,9 @@ if(demo_or_not == 1):
     input_array = [inpu for inpu in inp]
 elif(demo_or_not == 2):
     inp = open(path + "/input.txt", "r")
-    input_array = [inpu for inpu in inp]
+    input_array = [inpu.strip(" \n") for inpu in inp]
 
-#Converting the '/' in the path to . for inportin the module
+#Converting the '/' in the path to . for importin the module
 dottedpath = ""
 for chr in path:
     if(chr == '/'):
